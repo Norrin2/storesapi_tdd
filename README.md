@@ -1,10 +1,7 @@
-# Stores App Demo.
-This is a Stores CRUD app.
-The project uses a simple MVC approach, there is no Service Layer, Clean Architecture, DDD or any other more complex architecture as with how simple the problem is this would simply be over-engineering.
-Always feel free to refer to other .NET projects on my github for more complex samples.
-## Back-end
+# Stores API Demo.
+This is a Stores CRUD API.
 - .NET 8
-- The back-end provides an API that exposes CRUD operations over the Stores. The stores are stored in memory and for that purpose a StoresRepository is used, following the RepositoryPattern which brings the demo a little closer to what a real application would be. The repository is injected as a singleton to ensure it stays alive while the application is running.
+- The API that exposes CRUD operations over the Stores. The stores are stored in memory and for that purpose a StoresRepository is used, following the RepositoryPattern which brings the demo a little closer to what a real application would be. The repository is injected as a singleton to ensure it stays alive while the application is running.
 - Stores also need a company Id to reflect a multi company scenario.
 - There is a test project which covers use cases over the controller. It uses the xUnit nuget package which is one of the standard options for testing in .NET.
 
